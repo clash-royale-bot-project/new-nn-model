@@ -3,7 +3,7 @@ from pathlib import Path
 
 
 BASE_PATH = Path('./clash_royal_source_data')
-OUTPUT_PATH = Path('./output')
+OUTPUT_PATH = Path('./clash_royal_output')
 
 ARENAS_PATH = BASE_PATH / 'source' / 'arenas'
 UNITS_PATH = BASE_PATH / 'source' / 'units'
