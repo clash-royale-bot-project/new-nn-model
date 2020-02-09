@@ -15,6 +15,7 @@ from dataset_creation.utils import create_counter, get_unit_class, get_unit_clas
 from dataset_creation.cv_utils import get_convex_hull, paste_unit, scale_unit
 
 arenas_glob = [str(s) for s in ARENAS_PATH.glob('*.png')]
+# TODO : add all units in all views to the UNITS_PATH directory
 units_glob = [str(s) for s in UNITS_PATH.glob('*.png')]
 
 arenas = [cv.imread(filename, cv.IMREAD_UNCHANGED) for filename in arenas_glob]
@@ -45,6 +46,8 @@ def generate_sample(arena, units):
         h, w, _ = unit_img.shape
         y_range, x_range = arena_h - h, arena_w - w
 
+        # TODO : design a more sophisticated method of placing units on arenas
+        # TODO : restrict placing units on top of buildings, the river, and each other
         pos_y = round(min(y_range, max(0, random.gauss(y_range // 2, GAUSS_SIGMA))))
         pos_x = round(min(x_range, max(0, random.gauss(x_range // 2, GAUSS_SIGMA))))
         arena_img = paste_unit(arena_img, unit_img, pos_y, pos_x)

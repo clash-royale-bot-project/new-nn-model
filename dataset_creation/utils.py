@@ -23,6 +23,7 @@ def create_counter():
 def get_unit_classes_list():
     unit_classes = set()
     for line in open(CLASSES_FILE, 'r'):
+        # TODO : don't trim the team color, and make sure there are units of both colors in the synthetic dataset
         unit_class = re.sub(TRIM_POSTFIX, '', line.strip())
         unit_classes.add(unit_class)
     return sorted(unit_classes)

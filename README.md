@@ -2,7 +2,6 @@
 
 0.  Fix installation of pycocotools and detectron2.
 1.  Add `setup.py` to the root directory.
-2.  Use classes of both teams (don't trim "blue" and "red" postfixes).
 
 ## Installation
 

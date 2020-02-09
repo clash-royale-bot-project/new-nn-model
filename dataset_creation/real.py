@@ -77,6 +77,7 @@ def generate_real_datasets():
                 'bbox': bbox,
                 'bbox_mode': BoxMode.XYXY_ABS,
                 'category_id': category_id,
+                # TODO : make the polygon more close to the shape of the unit (for now it is rectangular)
                 'segmentation': [get_polygon_from_bbox(bbox)],
                 'iscrowd': 0
             })
