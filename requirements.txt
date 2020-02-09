@@ -1,7 +1,9 @@
 cython
+fvcore
 imageio
 numpy
 opencv-python
+Pillow==6.2.2
 pypng
 torch
 torchvision
