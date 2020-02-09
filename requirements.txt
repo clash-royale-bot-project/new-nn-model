@@ -1,0 +1,11 @@
+cython
+imageio
+numpy
+opencv-python
+pypng
+torch
+torchvision
+tqdm
+xmltodict
+git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI
+git+https://github.com/facebookresearch/detectron2.git
