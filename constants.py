@@ -1,24 +1,15 @@
 import re
 from pathlib import Path
 
-
 BASE_PATH = Path('./clash_royal_source_data')
 OUTPUT_PATH = Path('./clash_royal_output')
+CLASSES_FILE = Path('./predefined_classes.txt')
 
 ARENAS_PATH = BASE_PATH / 'source' / 'arenas'
 UNITS_PATH = BASE_PATH / 'source' / 'units'
 ANNOTATED_PATH = BASE_PATH / 'source' / 'annotated'
 DATASET_PATH = BASE_PATH / 'dataset'
 SCREENSHOTS_PATH = BASE_PATH / 'screenshots'
-
-
-CLASSES_FILE = BASE_PATH / 'predefined_classes.txt'
-
-TEMP_PATH = Path('/tmp/clash-royale')
-TEMP_DATASET_PATH = TEMP_PATH / 'dataset'
-
-if not TEMP_PATH.exists():
-    TEMP_PATH.mkdir()
 
 MODES = ['train', 'val']
 
@@ -35,7 +26,7 @@ REAL_DATASET_NAME = {
 }
 
 N_SAMPLES_PER_ARENA = {
-    MODES[0]: 15,
+    MODES[0]: 25,
     MODES[1]: 5
 }
 
