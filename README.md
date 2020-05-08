@@ -7,6 +7,8 @@
 
 You need to work on Linux or macOS. Make sure your gcc and g++ version are ≥ 4.9.
 
+[Source Data](https://mega.nz/file/0UtzxQJR#4SxwmSOG0gMqr-uMGhdrCnfDQGlHebNnWlxA6kIpRxY)
+
 #### Troubleshooting
 
 [Guide to detectron2 installation](https://detectron2.readthedocs.io/tutorials/install.html).
